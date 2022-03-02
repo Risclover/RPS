@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1><span class="rogue">Rogue</span> / <span class="paladin">Paladin</span> / <span class="sorceress">Sorceress</span></h1>
+    <div class="container">       
+        <div class="instructions-box">
+            <h2 class="instructions-head">Instructions</h2>
+            <p class="instructions">
+                This game is a lot like the old classic Rock, Paper, Scissors, but with a medieval twist! Click the "Start Game" button below to begin the game. 
+            </p>     
+            <ol class="instructions">
+                <li>Click "Start Game" when ready to begin.</li>
+                <li>Click on the Rogue, Paladin, or Sorceress to select it as your choice of play. The computer will also choose one of the three, at random.
+                    <ul>
+                        <li><span class="rogue">Rogue</span> &gt; <span class="sorceress">Sorceress</span></li>
+                        <li><span class="sorceress">Sorceress</span> &gt; <span class="paladin">Paladin</span></li>
+                        <li><span class="paladin">Paladin</span> &gt; <span class="rogue">Rogue</span></li>
+                    </ul>
+                </li>
+                <li>Read the announcement to see who wins the round.</li>
+                <li>The first to 5 rounds won wins the whole game.</li>
+            </ol>
+        </div>       
+        <div class="playerbtns">
+            <div class="players">
+                <div class="player-box">
+                    <div class="player-stats">
+                        <img src="images/robot_laptop.png" class="player-img">
+                        <span class="robot_score scorenum">0</span>
+                    </div>
+                    <div class="robot-choice"></div>
+                </div>
+                <div class="announcer-box">
+                    <p class="announcer"></p>
+                    <div class="outcome">
+                    
+                    </div>
+                </div>
+                <div class="player-box2">
+                    <div class="player-choice"></div>
+                    <div class="player-stats">
+                        <img src="images/person_laptop.png" class="player-img">
+                        <span class="player_score scorenum">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="btns">
+                <div class="ass-box">
+                    <img src="images/rogue/assasin.png" class="ass rps2">
+                    <h2>Rogue</h2>
+                </div>
+                <div class="swo-box">
+                    <img src="images/paladin/swordsman.png" class="swo rps2">
+                    <h2>Paladin</h2>
+                </div>
+                <div class="mag-box">
+                    <img src="images/sorceress/magician.png" class="mag rps2">
+                    <h2>Sorceress</h2>
+                </div>
+            </div>
+        </div>
+        <div class="startbtn">
+            <button class="start">
+            </button>
+        </div> 
+    </div>
+    <footer>
+        Project created by <a href="https://www.github.com/Risclover/" target="blank">Sara Dunlop</a> for <a href="https://www.theodinproject.com/" target="_blank">TOP</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+

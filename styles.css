@@ -1,0 +1,329 @@
+@font-face {
+    font-family: 'kingthings_petrock_lightRg';
+    src: url('Kingthings_Petrock_light-webfont.eot');
+    src: url('Kingthings_Petrock_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Kingthings_Petrock_light-webfont.woff2') format('woff2'),
+         url('Kingthings_Petrock_light-webfont.woff') format('woff'),
+         url('Kingthings_Petrock_light-webfont.ttf') format('truetype'),
+         url('Kingthings_Petrock_light-webfont.svg#kingthings_petrock_lightRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-family: 'kingthings_petrock_lightRg';
+    font-weight: 400;
+    color:rgb(48, 51, 60);
+    padding: 0 20px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.rogue {
+    color: rgb(123, 187, 134);
+}
+
+.paladin {
+    color: #d86565;
+}
+
+.sorceress {
+    color: #67acd6;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.score {
+    font-size: 1.5rem; 
+}
+.rps {
+    width: 12vw;
+    height: auto;
+}
+
+.rps2 {
+    width: 15vw;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+    height: auto;
+    border-radius: 1000px;
+}
+
+.player-img {
+    width: 10vw;
+}
+
+.ass {
+    background-color: rgb(146, 212, 157);
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+.ass:hover {
+    background-color:rgb(29, 94, 40);
+}
+
+.swo {
+    background-color: #ce7575;
+    transition: background-color 0.5s ease;
+}
+
+.swo:hover {
+    background-color: #830202;
+}
+
+.mag {
+    background-color: #73adcf;
+    transition: background-color 0.5s ease;
+}
+
+.mag:hover {
+    background-color: #0d3664;
+    transition: 0.5s ease;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+button {
+    font-size: 2rem;
+    font-family: 'kingthings_petrock_lightRg';
+    border: none;
+    background: none;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+button:hover {
+    color: #000000;
+    background-color: #bfa3ff;
+    text-shadow: 1px 1px 2px rgb(3, 65, 22);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.playerbtns {
+    display: none;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transition: 1s ease;
+}
+
+.players {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-box {
+    display: flex;
+}
+
+.player-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.announcer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.scorenum {
+    font-size: 2rem;
+}
+
+.player-img {
+    width: 15vw;
+    margin-bottom: 15px;
+}
+
+.announcer {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.announcer2 {
+    font-size: 1.5rem;
+    margin-top: -100px;
+    padding: 0;
+}
+
+ol {
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+ul li {
+    margin-left: 30px;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
+
+.instructions-head {
+    text-align: left;
+    font-size: 2rem;
+}
+
+.instructions {
+    text-align: left;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.instructions-box {
+    position: relative;
+    margin: -20px 20px 5px 20px;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 840px;
+}
+
+#fadeOut {
+    height: 75px;
+    width:100%;
+    position: sticky;
+    bottom: -10px;
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 90%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(95%,rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%);
+    background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%);
+    background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 40px;
+    transition: all 1s ease;
+}
+
+span {
+    margin-top: 0;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(231, 231, 231, 0.705);
+    bottom: 0;
+    padding: 10px;
+    margin-left: -40px;
+}
+
+footer a {
+    color: #5a1bee;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+footer a:hover {
+    color: #143ae4;
+}
+
+@media (max-width: 425px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        padding: 5px;
+        padding-bottom: 30px;
+    }
+    p {
+        font-size: 1rem;
+    }
+
+    .playerbtns {
+        width: 99%;
+        padding: 5px;
+        box-shadow: none;
+    }
+
+    .announcer2 {
+        font-size: .9rem;
+    }
+
+    .outcome img {
+        width: 20vw;
+    }
+
+    .player-img {
+        width: 20vw;
+    }
+    h1 {
+        font-size: 8vw;
+        margin-bottom: 20px;
+    }
+
+    .instructions-head {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+
+    img {
+        width: 30vw;
+    }
+
+    .instructions, .instructions li {
+        font-size: 1rem;
+    }
+
+    .instructions-box {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    button {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+
+    .rps2 {
+        width: 20vw;
+    }
+}
