@@ -43,6 +43,14 @@ h1 {
     color: #67acd6;
 }
 
+.final-results-box {
+    margin-top: 40px;
+}
+
+.final-results-text {
+    font-size: 1.5rem;
+}
+
 p {
     font-size: 1.5rem;
     margin-top: 10px;
@@ -62,6 +70,11 @@ p {
 
     height: auto;
     border-radius: 1000px;
+}
+
+.win-lose {
+    width: 10vw;
+    height: auto;
 }
 
 .player-img {

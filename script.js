@@ -38,7 +38,7 @@ $(document).ready(function() {
         })
     })
     $("<span class='score'></span>").prependTo($(".playerbtns"));
-    $("<br><br><span class='announcer2'></span>").insertAfter($('.players'));
+    $("<br><span class='announcer2'></span>").insertAfter($('.players'));
 
     function startGame() {
         computerPlay();
@@ -83,19 +83,21 @@ $(document).ready(function() {
         $(".player_score").html(`${playerScore}`);
 
         if(computerScore === 5) {
+            $("<div class='final-results-box'></div>").insertAfter($('.announcer2'));
             $(".btns").hide();
-            $(".announcer").text("The computer wins!");
-            $(".startbtn").show();
-            $(".start").html("Start over?");
+            $(".final-results-box").html("<span class='final-results-text'>Oh no! You took too many blows. You lose.</span> <br><br><img src='images/death.png' class='win-lose'>");
+            $(".startoverbtn").show();
+            $(".startover").html("Play Again");
             $(".ass, .mag, .swo").unbind('click');
         } else if (playerScore === 5) {
+            $("<div class='final-results-box'></div>").insertAfter($('.announcer2'));
             $(".btns").hide();
-            $(".announcer").text("You win!");
-            $(".startbtn").show();
-            $(".start").html("Start over?");
+            $(".final-results-box").html("<span class='final-results-text'>Huzzah - you win! Take this trophy, and make sure Computer hears you gloating.</span> <br><br><img src='images/trophy.png' class='win-lose'>");
+            $(".startoverbtn").show();
+            $(".startover").html("Play Again");
             $(".ass, .mag, .swo").unbind('click');
         }
-        $(".startbtn").click(function(){
+        $(".startover").click(function(){
             location.reload();
         });
     }
